@@ -25,17 +25,14 @@ const GET_USER_INFO = gql`
 `;
 
 const UPDATE_MEMBER_FEEDBACK = gql`
-mutation{
+mutation Update_Profile($id: Int, $status:String){
 	update_profile(where: {
-	  id : {_eq:4}
+	  id : {_eq:$id}
 	},_set:{
-	  feedback : {status : "Very Good"}
+	  feedback : {status : $status }
   
 	}){
-	  returning{
-		name
-		feedback
-	  }
+	  _affected_rows
 	}
   }
 `;
@@ -44,7 +41,7 @@ const GettingGraphQLData = (props) => {
 	const [manager,setManager] = React.useState(null);
 	const [showModal,setShowModal] = React.useState(false);
 	const [currentMember,setCurrentMember] = React.useState(null);
-	const [update_member, { data }] = useMutation(UPDATE_MEMBER_FEEDBACK);
+	const [update_profile, { data }] = useMutation(UPDATE_MEMBER_FEEDBACK);
 	const reviewValue = React.useRef();
 
 	React.useEffect(() => {	
@@ -82,7 +79,7 @@ const GettingGraphQLData = (props) => {
 			
 		}
 		else{
-			update_member();
+			update_profile({variables : {id : "4",status : "Very Good"}});
 		}
 		
 	} 
@@ -91,6 +88,7 @@ const GettingGraphQLData = (props) => {
 		const value = reviewValue.current.value;
 		console.log(value);
 		setShowModal(false);
+		update_profile({variables : {id: "4", status : reviewValue.current.value}});
 	}
 
 	console.log(typeof(manager), "---",manager[0]);
@@ -125,7 +123,7 @@ const GettingGraphQLData = (props) => {
 				style={customStyles}
 				contentLabel="Minimal Modal Example"
 				>
-					Review for {currentMember?.name}
+					<h2>Review for {currentMember?.name}</h2>
 					<textarea  ref={reviewValue} placeholder="Right review for Team member" rows="6" cols="80"/>
 					<br/>
 					<button onClick={handleReview}>submit</button>
