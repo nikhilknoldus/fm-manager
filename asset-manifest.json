@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nikhilknoldus/fm-manager/static/css/main.f82d15c0.chunk.css",
-    "main.js": "/nikhilknoldus/fm-manager/static/js/main.d6000243.chunk.js",
-    "main.js.map": "/nikhilknoldus/fm-manager/static/js/main.d6000243.chunk.js.map",
-    "runtime-main.js": "/nikhilknoldus/fm-manager/static/js/runtime-main.3b762ff4.js",
-    "runtime-main.js.map": "/nikhilknoldus/fm-manager/static/js/runtime-main.3b762ff4.js.map",
-    "static/js/2.c36e2bc4.chunk.js": "/nikhilknoldus/fm-manager/static/js/2.c36e2bc4.chunk.js",
-    "static/js/2.c36e2bc4.chunk.js.map": "/nikhilknoldus/fm-manager/static/js/2.c36e2bc4.chunk.js.map",
-    "index.html": "/nikhilknoldus/fm-manager/index.html",
-    "precache-manifest.3c0f27d46966924343d6d906f81534f9.js": "/nikhilknoldus/fm-manager/precache-manifest.3c0f27d46966924343d6d906f81534f9.js",
-    "service-worker.js": "/nikhilknoldus/fm-manager/service-worker.js",
-    "static/css/main.f82d15c0.chunk.css.map": "/nikhilknoldus/fm-manager/static/css/main.f82d15c0.chunk.css.map",
-    "static/js/2.c36e2bc4.chunk.js.LICENSE.txt": "/nikhilknoldus/fm-manager/static/js/2.c36e2bc4.chunk.js.LICENSE.txt"
+    "main.css": "/fm-manager/static/css/main.f82d15c0.chunk.css",
+    "main.js": "/fm-manager/static/js/main.a4de1750.chunk.js",
+    "main.js.map": "/fm-manager/static/js/main.a4de1750.chunk.js.map",
+    "runtime-main.js": "/fm-manager/static/js/runtime-main.14688c71.js",
+    "runtime-main.js.map": "/fm-manager/static/js/runtime-main.14688c71.js.map",
+    "static/js/2.c36e2bc4.chunk.js": "/fm-manager/static/js/2.c36e2bc4.chunk.js",
+    "static/js/2.c36e2bc4.chunk.js.map": "/fm-manager/static/js/2.c36e2bc4.chunk.js.map",
+    "index.html": "/fm-manager/index.html",
+    "precache-manifest.f894f250e8fb5341946288f7274fb938.js": "/fm-manager/precache-manifest.f894f250e8fb5341946288f7274fb938.js",
+    "service-worker.js": "/fm-manager/service-worker.js",
+    "static/css/main.f82d15c0.chunk.css.map": "/fm-manager/static/css/main.f82d15c0.chunk.css.map",
+    "static/js/2.c36e2bc4.chunk.js.LICENSE.txt": "/fm-manager/static/js/2.c36e2bc4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b762ff4.js",
+    "static/js/runtime-main.14688c71.js",
     "static/js/2.c36e2bc4.chunk.js",
     "static/css/main.f82d15c0.chunk.css",
-    "static/js/main.d6000243.chunk.js"
+    "static/js/main.a4de1750.chunk.js"
   ]
 }
